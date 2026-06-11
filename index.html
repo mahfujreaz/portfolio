@@ -1,46 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mahfuj Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahfujur Rahman Reaz — EEE Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <header class="hero">
-    <h1>Mahfujur Rahman Reaz</h1>
-    <p>EEE Student | Web Developer | Cybersecurity Learner</p>
-  </header>
+    <!-- Ambient background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="circuit-lines"></div>
+    </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am an Electrical and Electronic Engineering student.
-      I am learning Web Development and Cybersecurity.
-    </p>
-  </section>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
+                <span class="brand-initials">MRR</span>
+                <span class="brand-status">
+                    <span class="status-dot"></span>
+                    Available for work
+                </span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-cta">Get in Touch</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Basic JavaScript</li>
-      <li>Cybersecurity Basics</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#experience" class="mob-link">Experience</a>
+        <a href="#contact" class="mob-link">Get in Touch</a>
+    </div>
 
-  <section>
-    <h2>Projects</h2>
-    <p>✔ Portfolio Website (This project)</p>
-  </section>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-tag">B.Sc. EEE · Barishal Engineering College</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="name-line">Mahfujur</span>
+                <span class="name-line italic">Rahman</span>
+                <span class="name-line">Reaz</span>
+            </h1>
+            <div class="hero-descriptor">
+                <div class="descriptor-bar"></div>
+                <p>Electrical &amp; Electronic Engineer specializing in Power Systems, Circuit Design &amp; Instrumentation</p>
+            </div>
+            <div class="hero-chips">
+                <span class="chip">Circuit Design</span>
+                <span class="chip">Power Systems</span>
+                <span class="chip">Instrumentation</span>
+                <span class="chip">MATLAB</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-fill">View Projects</a>
+                <a href="#contact" class="btn-ghost">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="schematic-card">
+                <div class="sc-header">
+                    <span class="sc-title">sys.profile</span>
+                    <span class="sc-dot active"></span>
+                </div>
+                <div class="sc-body">
+                    <div class="sc-row"><span class="sc-key">role</span><span class="sc-val">EE Engineer</span></div>
+                    <div class="sc-row"><span class="sc-key">cgpa</span><span class="sc-val accent">3.00 / 4.00</span></div>
+                    <div class="sc-row"><span class="sc-key">degree</span><span class="sc-val">B.Sc. EEE (2025)</span></div>
+                    <div class="sc-row"><span class="sc-key">thesis</span><span class="sc-val">Piezoelectric Harvesting</span></div>
+                    <div class="sc-row"><span class="sc-key">award</span><span class="sc-val accent">2nd Place · BEC Showcase</span></div>
+                    <div class="sc-row"><span class="sc-key">location</span><span class="sc-val">Dhaka, Bangladesh</span></div>
+                    <div class="sc-row"><span class="sc-key">status</span><span class="sc-val green">● Open to work</span></div>
+                </div>
+                <div class="oscilloscope">
+                    <svg viewBox="0 0 280 70" xmlns="http://www.w3.org/2000/svg" class="wave-svg">
+                        <polyline class="wave-line" points="0,35 20,35 30,10 40,60 50,10 60,60 70,35 100,35 110,20 120,50 130,20 140,50 150,35 180,35 190,15 205,55 220,15 235,55 250,35 280,35"/>
+                    </svg>
+                    <span class="osc-label">EEG SIG / 50Hz</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: mahfujreaz35@gmail.com</p>
-  </section>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About</h2>
+            </div>
+            <div class="about-layout">
+                <div class="about-text-col">
+                    <p class="about-lead">A detail-oriented engineer with a passion for bridging theoretical fundamentals and real-world electrical challenges.</p>
+                    <p class="about-body">Graduated from Barishal Engineering College under the Barishal Engineering College with hands-on experience spanning residential electrical systems, control electronics, and sustainable energy research. Comfortable working across hardware builds, simulation environments, and technical documentation.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <strong>3.00</strong>
+                            <span>CGPA / 4.00</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <strong>3+</strong>
+                            <span>Major Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <strong>4</strong>
+                            <span>Club Memberships</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info-col">
+                    <div class="info-card">
+                        <h4>Profile Parameters</h4>
+                        <dl>
+                            <dt>Institution</dt>
+                            <dd>Barishal Engineering College<br><small>(Barishal Engineering College)</small></dd>
+                            <dt>Degree</dt>
+                            <dd>B.Sc. in Electrical &amp; Electronic Engineering</dd>
+                            <dt>Graduation</dt>
+                            <dd>2025</dd>
+                            <dt>Location</dt>
+                            <dd>Ashulia, Savar, Dhaka</dd>
+                            <dt>Languages</dt>
+                            <dd>Bangla (Native) · English (Fluent)</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-layout">
+                <div class="skill-group">
+                    <div class="sg-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Hardware &amp; Core</h3>
+                    <ul>
+                        <li>Core Circuit Design</li>
+                        <li>Electrical Schematics</li>
+                        <li>Validation &amp; Testing</li>
+                        <li>Power Systems &amp; Smart Grids</li>
+                        <li>Instrumentation &amp; Measurements</li>
+                        <li>Linear Systems Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <div class="sg-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>Software &amp; Simulation</h3>
+                    <ul>
+                        <li>C / C++ Programming</li>
+                        <li>MATLAB Simulation</li>
+                        <li>Signal &amp; Systems Processing</li>
+                        <li>Numerical Methods</li>
+                        <li>MS Office Suite</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <div class="sg-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Professional</h3>
+                    <ul>
+                        <li>Technical Communication</li>
+                        <li>Project Management</li>
+                        <li>Analytical Problem-Solving</li>
+                        <li>Cross-functional Teamwork</li>
+                        <li>Leadership &amp; Mentoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="proj-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="thesis">Research</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+            </div>
+            <div class="projects-grid">
+
+                <article class="proj-card featured" data-cat="thesis">
+                    <div class="pc-meta">
+                        <span class="pc-tag">B.Sc. Thesis</span>
+                        <span class="pc-year">2025</span>
+                    </div>
+                    <h3>Piezoelectric Energy Harvesting for Sustainable Monitoring Systems</h3>
+                    <p>Investigated and modeled advanced piezoelectric energy harvesting methods for sustainable power in remote coastal monitoring networks. Conducted full-system evaluations minimizing maintenance downtime with environmental impact considerations.</p>
+                    <div class="pc-tech">
+                        <span>Energy Systems</span>
+                        <span>MATLAB Modeling</span>
+                        <span>Linear Dynamics</span>
+                        <span>Sustainability</span>
+                    </div>
+                    <div class="pc-accent-line"></div>
+                </article>
+
+                <article class="proj-card" data-cat="hardware">
+                    <div class="pc-meta">
+                        <span class="pc-tag">Aviation Electronics</span>
+                        <span class="pc-year">2024</span>
+                    </div>
+                    <h3>Radio-Controlled Plane Model</h3>
+                    <p>Engineered and fabricated a fully operational RC airplane from raw calculations to completion. Integrated RF control receivers and performed strict flight dynamics validation and signal testing.</p>
+                    <div class="pc-tech">
+                        <span>Control Systems</span>
+                        <span>RF Signals</span>
+                        <span>Validation Testing</span>
+                    </div>
+                    <div class="pc-accent-line"></div>
+                </article>
+
+                <article class="proj-card" data-cat="hardware">
+                    <div class="pc-meta">
+                        <span class="pc-tag">Electrical Installation</span>
+                        <span class="pc-year">2023</span>
+                    </div>
+                    <h3>Residential House Wiring System</h3>
+                    <p>Designed and deployed a full-scale residential electrical layout meeting standard safety regulations. Managed circuit deployment, load balancing, and protection parameter configuration end-to-end.</p>
+                    <div class="pc-tech">
+                        <span>Load Calculation</span>
+                        <span>Safety Protocol</span>
+                        <span>Circuit Layout</span>
+                    </div>
+                    <div class="pc-accent-line"></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Timeline -->
+    <section id="experience" class="section section-alt">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Experience &amp; Activities</h2>
+            </div>
+            <div class="timeline">
+
+                <div class="tl-item" data-animate>
+                    <div class="tl-left">
+                        <span class="tl-year">2024</span>
+                    </div>
+                    <div class="tl-connector">
+                        <div class="tl-dot"></div>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="tl-right">
+                        <span class="tl-badge award">🏆 Award</span>
+                        <h3>2nd Place — Project Showcase</h3>
+                        <p class="tl-place">Barishal Engineering College</p>
+                        <p>Recognized for outstanding technical design, architectural innovation, and real-world practicality at the annual engineering showcase.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-animate>
+                    <div class="tl-left">
+                        <span class="tl-year">Industrial<br>Training</span>
+                    </div>
+                    <div class="tl-connector">
+                        <div class="tl-dot"></div>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="tl-right">
+                        <span class="tl-badge training">Training</span>
+                        <h3>Electrical Engineering &amp; Instrumentation Trainee</h3>
+                        <p class="tl-place">Training Institute of Chemical Industries (TICI), Savar</p>
+                        <p>Completed intensive industrial training in power systems, automated control loops, safety infrastructure, and industrial instrument validation cycles.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-animate>
+                    <div class="tl-left">
+                        <span class="tl-year">2022–24</span>
+                    </div>
+                    <div class="tl-connector">
+                        <div class="tl-dot"></div>
+                    </div>
+                    <div class="tl-right">
+                        <span class="tl-badge clubs">Clubs</span>
+                        <h3>Institutional Club Engagements</h3>
+                        <p class="tl-place">Barishal Engineering College</p>
+                        <div class="tl-clubs">
+                            <span>BEC Electronics Club</span>
+                            <span>Research &amp; Innovation Club</span>
+                            <span>Film &amp; Photography Society</span>
+                            <span>Sports Club</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Get in Touch</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <p class="contact-lead">Looking to hire an entry-level engineer for hardware design, instrumentation, or energy systems? Let's talk.</p>
+                    <div class="contact-channels">
+                        <a href="mailto:mahfujreaz35@gmail.com" class="channel-item">
+                            <div class="ch-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="ch-text">
+                                <span class="ch-label">Email</span>
+                                <span class="ch-val">mahfujreaz35@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+8801707804748" class="channel-item">
+                            <div class="ch-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44C1.84 2.84 2.38 2 3 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="ch-text">
+                                <span class="ch-label">Phone</span>
+                                <span class="ch-val">+880 1707 804 748</span>
+                            </div>
+                        </a>
+                        <div class="channel-item no-link">
+                            <div class="ch-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="ch-text">
+                                <span class="ch-label">Location</span>
+                                <span class="ch-val">Ashulia, Savar, Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" placeholder="e.g. Ahmed Hassan" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="femail">Email Address</label>
+                                <input type="email" id="femail" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="fmsg">Message</label>
+                            <textarea id="fmsg" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-fill full-width">Send Message</button>
+                        <p class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-name">Mahfujur Rahman Reaz</span>
+            <span class="footer-copy">© 2026 · Built with care</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
